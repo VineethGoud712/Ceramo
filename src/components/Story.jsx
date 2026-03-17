@@ -1,21 +1,29 @@
-import storyVideo from "/images/story2.mp4"; // your video
+import { useState } from "react";
+import localVideo from "/images/story2.mp4";
+
+const cloudVideo =
+  "https://res.cloudinary.com/dvnpzpoi6/video/upload/v1773762961/story2_f2jjf0.mp4";
 
 const StorySection = () => {
+  const [videoSrc, setVideoSrc] = useState(cloudVideo);
+
   return (
     <section className="relative w-full h-[550px] overflow-hidden">
+      
       <video
+        key={videoSrc} 
         autoPlay
         muted
         loop
         playsInline
-        controls={false}
-        preload="none"
-        disablePictureInPicture
-        poster="https://player.cloudinary.com/embed/?cloud_name=dvnpzpoi6&public_id=story2_f2jjf0"
+        preload="metadata"
+        poster="/images/storyimg.png"
+        onError={() => setVideoSrc(localVideo)} 
         className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
       >
-        <source src={storyVideo} type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
+
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-transparent" />
 
       <div className="relative z-10 px-6 pt-5 max-w-md text-white leading-relaxed">
@@ -28,6 +36,7 @@ const StorySection = () => {
           considered enough to keep forever.
         </p>
       </div>
+
     </section>
   );
 };
