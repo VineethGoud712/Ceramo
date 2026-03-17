@@ -2,35 +2,44 @@ const reviews = [
   {
     name: "Aarav Mehta",
     text: "The weight, the warmth, the feel — everything about this mug feels intentional. Easily my favorite part of the morning.",
+    rating: 5,
   },
   {
     name: "Sofia Carter",
     text: "You don’t realize how much a good mug matters until you use this. It just feels right in your hand.",
+    rating: 5,
   },
   {
     name: "Daniel Kim",
     text: "Simple, elegant, and keeps my coffee warm longer than expected. Exactly what I was looking for.",
+    rating: 4.9,
   },
 ];
 
 const ReviewSection = () => {
   return (
-    <section className="bg-black text-white px-6 py-1">
+    <section className="bg-black text-white px-6 py-1 mt-2">
 
       {/* Heading */}
-      <div className="mb-10 max-w-md">
-        <p className="text-[#727272] text-1xl font-satoshi tracking-wide">
+      <div className="mb-8 max-w-md">
+        <p className="text-[#727272] text-sm tracking-wide">
           WHAT PEOPLE SAY
         </p>
 
-        <h2 className="text-3xl font-times italic mt-2">
+        <h2 className="text-3xl italic mt-2">
           Crafted for everyday moments
         </h2>
+
+        {/* Overall Rating */}
+        <div className="flex items-center gap-2 mt-4">
+          <span className="text-xl font-semibold">4.9</span>
+          <span className="text-lg">★★★★★</span>
+          <span className="text-gray-400 text-sm">(120k reviews)</span>
+        </div>
       </div>
 
       {/* Reviews */}
       <div className="space-y-6 max-w-md">
-
         {reviews.map((review, i) => (
           <div
             key={i}
@@ -38,7 +47,7 @@ const ReviewSection = () => {
           >
             {/* Stars */}
             <div className="text-white mb-3">
-              ⭐⭐⭐⭐⭐
+              {"⭐".repeat(Math.round(review.rating))}
             </div>
 
             {/* Text */}
@@ -52,7 +61,6 @@ const ReviewSection = () => {
             </p>
           </div>
         ))}
-
       </div>
 
     </section>

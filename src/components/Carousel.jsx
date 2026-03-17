@@ -28,9 +28,7 @@ const slides = [
 
 const Carousel = () => {
   return (
-    <section className="bg-black text-white px-6 py-10 pt-2 mt-0">
-
-      {/* Heading */}
+    <section className="bg-black text-white px-6 py-3 pt-2 mt-0">
       <div className="mb-10">
         <p className="text-gray-500 text-xl tracking-wide">
           THE SMALL
@@ -41,7 +39,6 @@ const Carousel = () => {
         </h2>
       </div>
 
-      {/* Swiper */}
       <Swiper
         modules={[Pagination]}
         spaceBetween={20}
@@ -53,17 +50,14 @@ const Carousel = () => {
 
             <div className="relative">
 
-              {/* Image */}
               <img
                 src={slide.image}
                 alt=""
                 className="w-full h-[420px] object-cover rounded-sm"
               />
 
-              {/* Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent rounded-sm" />
 
-              {/* Text */}
               <div className="absolute bottom-6 left-5 right-5">
                 <h3 className="text-3xl italic font-serif">
                   {slide.title}

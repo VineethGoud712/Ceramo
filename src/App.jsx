@@ -6,6 +6,7 @@ import SipSection from "./components/Sipsection";
 import HandleSection from "./components/HandleSection";
 import Reviews from "./components/Reviews"
 import Footer from "./components/Footer";
+import CupSelector from "./components/CupSelector";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <SipSection />
       <HandleSection />
       <Carousel />
+      <CupSelector />
       <Reviews />
       <Footer />
     </div>
