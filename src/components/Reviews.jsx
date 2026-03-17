@@ -33,7 +33,7 @@ const ReviewSection = () => {
         {/* Overall Rating */}
         <div className="flex items-center gap-2 mt-4">
           <span className="text-xl font-semibold">4.9</span>
-          <span className="text-lg">★★★★★</span>
+          <span className="text-lg text-[#D4AF37]">★★★★★</span>
           <span className="text-gray-400 text-sm">(120k reviews)</span>
         </div>
       </div>
@@ -46,8 +46,8 @@ const ReviewSection = () => {
             className="border border-white/10 p-5 rounded-sm"
           >
             {/* Stars */}
-            <div className="text-white mb-3">
-              {"⭐".repeat(Math.round(review.rating))}
+            <div className="text-[#D4AF37] mb-3">
+              {"★".repeat(Math.round(review.rating))}
             </div>
 
             {/* Text */}

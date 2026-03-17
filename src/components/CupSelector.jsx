@@ -23,7 +23,7 @@ const CupSelector = () => {
     setTimeout(() => {
       setSelected(i); 
       setFade(false); 
-    }, 150);
+    }, 100);
   };
 
   return (

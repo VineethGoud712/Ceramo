@@ -1,4 +1,4 @@
-import storyVideo from "/images/story.mp4"; // your video
+import storyVideo from "/images/story2.mp4"; // your video
 
 const StorySection = () => {
   return (
@@ -15,7 +15,7 @@ const StorySection = () => {
       >
         <source src={storyVideo} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-transparent" />
 
       <div className="relative z-10 px-6 pt-5 max-w-md text-white leading-relaxed">
         <p className="font-satoshi text-[16px]">
