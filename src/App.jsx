@@ -10,7 +10,7 @@ import CupSelector from "./components/CupSelector";
 
 export default function App() {
   return (
-    <div className="max-w-[375px] mx-auto bg-[#000000] min-h-screen mt-2 mb-2">
+    <div className="max-w-[375px] mx-auto bg-[#000000] min-h-screen ">
       <Navbar />
       <Hero />
       <Story />

@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="relative flex items-center justify-between bg-[#000000]  px-6 h-[52px]">
       
       <span className="text-white text-lg  font-semibold tracking-wide select-none">
-        Coffeemug
+        CÈRAMO 
       </span>
 
       <button

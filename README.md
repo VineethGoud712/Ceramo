@@ -1,324 +1,168 @@
-# Premium Ceramic Mug – Product Page
+# CÈRAMO – Premium Ceramic Mug Product Page
 
-## Project Overview
+## Overview
 
-This project is a **mobile-first premium product page** built using **React, Tailwind CSS, and Framer Motion**.
-The page showcases a handcrafted ceramic mug with a focus on **clean design, smooth animations, and a premium shopping experience**.
+CÈRAMO is a mobile-first premium product page built using **React** and **Tailwind CSS**, designed to deliver a refined and immersive product experience.
 
-The design simulates a modern **e-commerce product page** similar to those used by brands like Apple or Shopify stores.
+The project focuses on **minimal design, emotional storytelling, and smooth interactions**, inspired by modern premium e-commerce experiences.
 
-The layout is optimized for **mobile devices (375px viewport)**.
-
----
-
-# Features Implemented
-
-## 1. Hero Section
-
-Displays the main product information.
-
-Includes:
-
-* Product title
-* Rating and reviews
-* Purchase indicator (e.g., *600+ bought in past month*)
-* Product description
-* Product image with gradient glow effect
-* Smooth entry animation using Framer Motion
+The layout is optimized for a **375px mobile viewport**, ensuring a focused and high-quality mobile experience.
 
 ---
 
-## 2. Product Story Section
+## Key Features
 
-Explains the inspiration and craftsmanship behind the mug.
+### Navigation
+- Minimal top navigation bar  
+- Animated hamburger menu  
+- Clean brand presentation  
 
-Purpose:
+### Hero Section
+- Strong product headline and messaging  
+- Product image showcase  
+- Subtle purchase indicator  
+- Primary call-to-action  
 
-* Builds emotional connection
-* Highlights the artisan process
-* Enhances brand storytelling
+### Story Section
+- Full-screen background video  
+- Gradient overlay for readability  
+- Focus on craftsmanship and storytelling  
+- Video hosted via **Cloudinary CDN** for optimized performance  
 
----
+### Product Detail Sections
+Two dedicated sections highlighting product design:
+- **Where Every Sip Begins** → Rim experience  
+- **Comfort in Every Hold** → Handle ergonomics  
 
-## 3. Product Image Carousel
+### Moments Carousel
+- Built using **Swiper.js**  
+- Smooth mobile swipe interaction  
+- Pagination indicators  
+- Lifestyle storytelling slides:
+  - The First Sip  
+  - The Quiet Pause  
+  - The Warmth  
 
-Allows users to browse multiple product images.
+### Variant Selector
+- Interactive cup selection  
+- Multiple color variants  
+- Smooth image transitions (fade + scale)  
+- Visual selection feedback  
 
-Features:
+**Emotional Messaging:**  
+> “Not just a cup — a feeling in your hands.”
 
-* Smooth horizontal scrolling
-* Mobile-friendly swipe experience
-* Displays different product angles and details
+### Customer Reviews
+- Overall rating display (**4.9 ★**)  
+- Review count (**120k+**)  
+- Individual testimonials  
+- Star-based rating UI  
 
----
-
-## 4. Variant Selector
-
-Allows users to select different product options.
-
-Examples:
-
-* Color
-* Style
-* Finish
-
-Provides an interactive way to choose the preferred variant.
-
----
-
-## 5. Features Section
-
-Highlights key product benefits.
-
-Includes:
-
-* Handcrafted by artisans
-* Superior heat retention
-* Unique glaze finish
-* Comfortable ergonomic grip
-
-Each feature includes:
-
-* Icon
-* Title
-* Short explanation
-
-Icons are displayed with **premium background styling** to enhance visual appeal.
+### Footer
+- Brand identity  
+- Navigation links  
+- Supporting brand message  
 
 ---
 
-## 6. Customer Reviews
+## Tech Stack
 
-Displays customer feedback to build trust.
-
-Each review includes:
-
-* Customer name
-* Star rating
-* Short review text
-
-Example:
-
-★★★★★
-*"This mug makes my morning coffee feel special."*
-— Sarah M.
+| Technology   | Purpose                        |
+|-------------|--------------------------------|
+| React       | Component-based UI             |
+| Tailwind CSS| Styling & layout               |
+| Swiper.js   | Carousel functionality         |
+| Cloudinary  | Video hosting & delivery       |
 
 ---
 
-## 7. Call-To-Action Section
+## Project Structure
 
-Encourages users to purchase the product.
-
-Includes:
-
-* Pricing information
-* Purchase button
-
----
-
-## 8. Sticky Cart
-
-A persistent **Add to Cart bar** that stays visible while scrolling.
-
-Benefits:
-
-* Improves conversion
-* Makes purchasing easier
-* Common in modern ecommerce sites
-
----
-
-# Technologies Used
-
-## React
-
-Used to build reusable UI components.
-
-Components created:
-
-* Hero
-* Story
-* Carousel
-* VariantSelector
-* Features
-* Reviews
-* CTA
-* StickyCart
-
----
-
-## Tailwind CSS
-
-Used for styling and layout.
-
-Benefits:
-
-* Utility-first CSS framework
-* Faster UI development
-* Responsive design support
-* Clean and consistent styling
-
----
-
-## Framer Motion
-
-Used for animations and motion effects.
-
-Examples:
-
-* Fade-in animations
-* Scroll reveal effects
-* Hover scaling interactions
-
----
-
-## Lucide React
-
-Used for clean, modern icons.
-
-Icons used in the Features section include:
-
-* Hand (craftsmanship)
-* Flame (heat retention)
-* Palette (glaze design)
-* Coffee (daily ritual)
-
----
-
-# Project Structure
-
-```
+```bash
 src
- ├─ components
- │   ├─ Hero.jsx
- │   ├─ Story.jsx
- │   ├─ Carousel.jsx
- │   ├─ VariantSelector.jsx
- │   ├─ Features.jsx
- │   ├─ Reviews.jsx
- │   ├─ CTA.jsx
- │   └─ StickyCart.jsx
- │
- ├─ App.jsx
- └─ main.jsx
+├─ components
+│  ├─ Navbar.jsx
+│  ├─ Hero.jsx
+│  ├─ Story.jsx
+│  ├─ SipSection.jsx
+│  ├─ HandleSection.jsx
+│  ├─ Carousel.jsx
+│  ├─ CupSelector.jsx
+│  ├─ Reviews.jsx
+│  └─ Footer.jsx
+│
+├─ App.jsx
+└─ main.jsx
 ```
 
-Images are stored inside:
-
+**Assets:**
 ```
 public/images
 ```
 
 ---
 
-# Packages Installed
+## Installation & Setup
 
-### React
-
-Core framework used to build the application.
-
----
-
-### Tailwind CSS
-
-Installed for styling.
-
-Installation included:
-
-* Tailwind CSS
-* PostCSS
-* Autoprefixer
-
----
-
-### Framer Motion
-
-Used for animations.
-
-Installation command:
-
+1. Clone the repository
 ```bash
-npm install framer-motion
-```
-
----
-
-### Lucide React
-
-Used for icons.
-
-Installation command:
-
-```bash
-npm install lucide-react
-```
-
----
-
-# Installation & Setup
-
-## 1. Clone the repository
-
-```bash
-git clone <repository-url>
+git clone https://github.com/VineethGoud712/Ceramo.git
 cd project-folder
 ```
 
----
-
-## 2. Install dependencies
-
+2. Install dependencies
 ```bash
 npm install
 ```
 
----
-
-## 3. Run the development server
-
+3. Run development server
 ```bash
 npm run dev
 ```
 
----
-
-## 4. Open the project
-
-Visit:
-
+4. Open in browser
 ```
 http://localhost:5173
 ```
 
 ---
 
-# Design Goals
+## Design Principles
 
-The goal of this exercise was to create a **premium feeling product page** by focusing on:
+This project was built with a focus on:
 
-* Clean typography
-* Soft neutral color palette
-* Smooth animations
-* Clear information hierarchy
-* Mobile-first design
-* Engaging product storytelling
-
----
-
-# Future Improvements
-
-Possible enhancements:
-
-* Add product image zoom
-* Add interactive color selection
-* Add quantity selector
-* Add review rating distribution
-* Add checkout flow
+- Minimal and clean UI  
+- Strong typography (**Satoshi & Times**)  
+- Black-first premium color palette  
+- Emotional storytelling  
+- Smooth transitions and interactions  
+- Mobile-first design  
 
 ---
 
-# Conclusion
+## Future Enhancements
 
-This project demonstrates how to build a **modern mobile product page** using React with a focus on **design quality, animation, and user experience**.
+- Image zoom interaction  
+- Advanced variant labels (e.g., Crimson, Forest, Sand)  
+- Sticky add-to-cart bar  
+- Checkout flow integration  
+- Performance optimization for media  
 
-The result is a **premium, minimal, and engaging ecommerce interface** optimized for mobile shopping.
+---
+
+## Preview
+
+**Live Demo:**  
+https://ceramo.netlify.app/
+
+---
+
+## Conclusion
+
+CÈRAMO demonstrates how to build a modern, premium product page using React, with a strong emphasis on:
+
+- User experience  
+- Visual storytelling  
+- Clean and scalable UI  
+
+The result is a **refined, minimal, and engaging mobile shopping interface**.

@@ -2,7 +2,7 @@ import rimImage from "/images/sipimg.png"; // your image
 
 const SipSection = () => {
   return (
-    <section className="bg-black text-white py-16 pt-0">
+    <section className="bg-black text-white py-16 pt-5">
 
       {/* Image */}
       <div className="w-full">

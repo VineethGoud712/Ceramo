@@ -22,7 +22,7 @@ const ReviewSection = () => {
 
       {/* Heading */}
       <div className="mb-8 max-w-md">
-        <p className="text-[#727272] text-sm tracking-wide">
+        <p className="text-[#727272] text-xl tracking-wide">
           WHAT PEOPLE SAY
         </p>
 
