@@ -28,7 +28,7 @@ const slides = [
 
 const Carousel = () => {
   return (
-    <section className="bg-black text-white px-6 py-3 pt-4 mt-2">
+    <section className="bg-black text-white px-6 py-3 pt-16 mt-2">
       <div className="mb-10">
         <p className="text-gray-500 text-xl tracking-wide">
           THE SMALL

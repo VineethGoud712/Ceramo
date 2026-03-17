@@ -18,7 +18,7 @@ const reviews = [
 
 const ReviewSection = () => {
   return (
-    <section className="bg-black text-white px-6 py-1 mt-2">
+    <section className="bg-black text-white px-6 py-1 pt-16 mt-2">
 
       {/* Heading */}
       <div className="mb-8 max-w-md">
@@ -43,7 +43,7 @@ const ReviewSection = () => {
         {reviews.map((review, i) => (
           <div
             key={i}
-            className="border border-white/10 p-5 rounded-sm"
+            className="bg-[#121212] border border-white/10 p-5 rounded-sm"
           >
             {/* Stars */}
             <div className="text-[#D4AF37] mb-3">

@@ -3,5 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.5;
+}
 
-
+.swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 1;
+}

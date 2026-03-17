@@ -6,13 +6,11 @@ const Hero = () => {
 
       {/* Text */}
       <div className="w-full max-w-md">
-        <p className="text-[#727272] text-[32px] font-satoshi leading-tight tracking-wide">
-          THE MOMENTS THAT
-          <br />
-          MATTER
+        <p className="text-[#727272] text-[30px] font-satoshi leading-tight tracking-wide">
+         CRAFTED FOR THE HANDS THAT HOLD IT.
         </p>
 
-        <h1 className="text-3xl font-times  text-white mt-2 leading-tight">
+        <h1 className="text-[38px] font-times  text-white mt-2 leading-tight">
           THE MOMENT IN
           <br />
           EVERY SIP
@@ -20,7 +18,7 @@ const Hero = () => {
 
         <div className="flex items-center gap-2 mt-2">
           <span className="text-gray-300 text-sm">Latest One</span>
-          <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+          <span className="w-2 h-2 bg-green-500 rounded-full mt-1"></span>
         </div>
       </div>
 

@@ -4,7 +4,7 @@
 
 CÈRAMO is a mobile-first premium product page built using **React** and **Tailwind CSS**, designed to deliver a refined and immersive product experience.
 
-The project focuses on **minimal design, emotional storytelling, and smooth interactions**, inspired by modern premium e-commerce experiences.
+The project focuses on **minimal design, emotional storytelling, and smooth interactions**
 
 The layout is optimized for a **375px mobile viewport**, ensuring a focused and high-quality mobile experience.
 
