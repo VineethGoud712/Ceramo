@@ -1,49 +1,62 @@
-export default function Reviews() {
+const reviews = [
+  {
+    name: "Aarav Mehta",
+    text: "The weight, the warmth, the feel — everything about this mug feels intentional. Easily my favorite part of the morning.",
+  },
+  {
+    name: "Sofia Carter",
+    text: "You don’t realize how much a good mug matters until you use this. It just feels right in your hand.",
+  },
+  {
+    name: "Daniel Kim",
+    text: "Simple, elegant, and keeps my coffee warm longer than expected. Exactly what I was looking for.",
+  },
+];
+
+const ReviewSection = () => {
   return (
-    <div className="px-6 mt-8">
-      <h2 className="text-2xl text-primary font-semibold">What people say</h2>
+    <section className="bg-black text-white px-6 py-1">
 
-      <div className="space-y-4 mt-6">
-        <div className="bg-white p-4 rounded-xl shadow">
-          <p className="text-yellow-500 text-sm">★★★★★</p>
+      {/* Heading */}
+      <div className="mb-10 max-w-md">
+        <p className="text-[#727272] text-1xl font-satoshi tracking-wide">
+          WHAT PEOPLE SAY
+        </p>
 
-          <p className="mt-2 text-gray-700">
-            This mug makes my morning coffee feel special.
-          </p>
-
-          <p className="text-sm text-gray-500 mt-2">— Sarah M.</p>
-        </div>
-
-        <div className="bg-white p-4 rounded-xl shadow">
-          <p className="text-yellow-500 text-sm">★★★★☆</p>
-
-          <p className="mt-2 text-gray-700">
-            Beautiful craftsmanship and perfect weight.
-          </p>
-
-          <p className="text-sm text-gray-500 mt-2">— Daniel R.</p>
-        </div>
-
-        <div className="bg-white p-4 rounded-xl shadow">
-          <p className="text-yellow-500 text-sm">★★★★☆</p>
-
-          <p className="mt-2 text-gray-700">
-            Love the texture and glaze. Coffee stays warm longer.
-          </p>
-
-          <p className="text-sm text-gray-500 mt-2">— Emily K.</p>
-        </div>
-
-        <div className="bg-white p-4 rounded-xl shadow">
-          <p className="text-yellow-500 text-sm">★★★★★</p>
-
-          <p className="mt-2 text-gray-700">
-            Feels premium and handmade. My favorite mug now.
-          </p>
-
-          <p className="text-sm text-gray-500 mt-2">— James L.</p>
-        </div>
+        <h2 className="text-3xl font-times italic mt-2">
+          Crafted for everyday moments
+        </h2>
       </div>
-    </div>
+
+      {/* Reviews */}
+      <div className="space-y-6 max-w-md">
+
+        {reviews.map((review, i) => (
+          <div
+            key={i}
+            className="border border-white/10 p-5 rounded-sm"
+          >
+            {/* Stars */}
+            <div className="text-white mb-3">
+              ⭐⭐⭐⭐⭐
+            </div>
+
+            {/* Text */}
+            <p className="text-gray-300 text-sm leading-relaxed">
+              {review.text}
+            </p>
+
+            {/* Name */}
+            <p className="mt-4 text-white text-sm font-medium">
+              — {review.name}
+            </p>
+          </div>
+        ))}
+
+      </div>
+
+    </section>
   );
-}
+};
+
+export default ReviewSection;

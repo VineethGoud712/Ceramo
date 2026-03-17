@@ -1,30 +1,23 @@
 import Hero from "./components/Hero";
 import Story from "./components/Story";
 import Carousel from "./components/Carousel";
-import VariantSelector from "./components/VariantSelector";
-import Features from "./components/Features";
-import Reviews from "./components/Reviews";
-import CTA from "./components/CTA";
-import StickyCart from "./components/StickyCart";
+import Navbar from "./components/Navbar";
+import SipSection from "./components/Sipsection";
+import HandleSection from "./components/HandleSection";
+import Reviews from "./components/Reviews"
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="max-w-[375px] mx-auto bg-[#FBF9F7] min-h-screen mt-2 mb-2">
+    <div className="max-w-[375px] mx-auto bg-[#000000] min-h-screen mt-2 mb-2">
+      <Navbar />
       <Hero />
-
-      <VariantSelector />
-
-      <Carousel />
-
       <Story />
-
-      <Features />
-
+      <SipSection />
+      <HandleSection />
+      <Carousel />
       <Reviews />
-
-      <CTA />
-
-      <StickyCart />
+      <Footer />
     </div>
   );
 }
